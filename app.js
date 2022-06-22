@@ -54,9 +54,9 @@ const request=require('request')
 
 const url1='https://api.mapbox.com/geocoding/v5/mapbox.places/-73.989,40.733.json?access_token=pk.eyJ1IjoicXdlcnR5MTIzNTg5IiwiYSI6ImNsNG9qZmRrMDA1dnQzbWxuN3QyMDgwamUifQ.cSWq4npE_bJZLffinfNMKA&limit=1'
 
-request({url : url1,json : true} , (e , r)=>{
+request({url : url1,json : true} , (error , response)=>{
   // console.log(response)
-  const data = r
+  const data = response
   // const data = JSON.parse(response.body)
   console.log(data)
 })
